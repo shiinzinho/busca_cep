@@ -24,7 +24,7 @@ const Cadastro = () => {
         password: password
     }
     
-    axios.post('http://10.137.9.131:8000/api/store', dados, {
+    axios.post('http://10.137.9.134:8000/api/store', dados, {
         headers: {
             "Accept":"application/json",
             "Content-Type": "application/json"
