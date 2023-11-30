@@ -21,7 +21,7 @@ const Listagem = () => {
 
         async function fetchData() {
             try{
-                const response = await axios.post('http://10.137.9.134:8000/api/findNome',
+                const response = await axios.post('http://10.137.9.136:8000/api/findNome',
                 {nome: pesquisa},
                 {
                     headers: {
@@ -42,7 +42,7 @@ const Listagem = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get('http://10.137.9.134:8000/api/find');
+                const response = await axios.get('http://10.137.9.136:8000/api/find');
                 setUsuarios(response.data.data)
             } catch (error) {
                 setError("Ocorreu um erro");
